@@ -1,5 +1,5 @@
 .scene__container--2 {
-//    overflow: hidden;
+    overflow: hidden;
     .store__wall--right, .store__wall--left, .store__entrance, svg {
         position: relative;
         left: 70%;
@@ -22,16 +22,11 @@
     }
     svg {
         left: -6%;
-        top: -235%;
+        top: -220%;
         z-index: 6;
-        transform: scale(0.9);
     }
     svg:nth-of-type(2) {
-        top: -353%;
-        z-index: 4;
-    }
-    svg:nth-of-type(3) {
-        top: -475%;
+        top: -316%;
         z-index: 4;
     }
 }
