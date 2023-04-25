@@ -1,0 +1,66 @@
+$topWallHeight: 40%;
+
+* {
+    padding: 0;
+    margin: 0;
+}
+//Hides scrollbar in Firefox
+html {
+    scrollbar-width: none;
+}
+//Hides scrollbar in Chrome / Safari
+html::-webkit-scrollbar {
+    display: none;
+}
+body > div {
+    height: 100vh;
+    width: 100%;
+    display: none;
+}
+
+//Scene 1
+
+.scene__container--2 {
+    display: revert;
+    .store__wall--top {
+        width: 100%;
+        height: $topWallHeight;
+    }
+    .store__wall--left, .store__wall--right, .store__entrance {
+        width: 50%;
+        height: 100%-$topWallHeight;
+    }
+    .store__wall--left {
+        border-right: 3px solid black;
+        z-index: 5;
+    }
+    .store__wall--right {
+        width: 30%;
+    }
+    .store__sign {
+        width: 50%;
+        height: 50%;
+        background-color: purple;
+        position: relative;
+        left: 35%;
+        top: 25%;
+        font-size: 4.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid black;
+        border-radius: 10px;
+    }
+    .store__entrance {
+        background-color: purple;
+        width: 20%;
+        border-top: 3px solid black;
+        border-right: 3px solid black;
+    }
+}
+
+//Scene 3
+
+//Scene 4
+
+//Scene 5

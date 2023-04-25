@@ -1,0 +1,16 @@
+$backgroundOdd: #3984cf;
+$backgroundEven: #306daa;
+$storeWall: #c09658;
+
+body > div:nth-of-type(odd) {
+    background-color: $backgroundOdd;
+}
+body > div:nth-of-type(even) {
+    background-color: $backgroundEven;
+}
+
+.scene__container--2 {
+    .store__wall--top, .store__wall--left, .store__wall--right {
+        background-color: $storeWall;
+    }
+}

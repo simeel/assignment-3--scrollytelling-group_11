@@ -1,0 +1,15 @@
+.scene__container--2 {
+    overflow: hidden;
+    .store__wall--right, .store__wall--left, .store__entrance {
+        position: relative;
+        left: 70%;
+    }
+    .store__wall--left {
+        left: 0;
+        top: -60%;
+    }
+    .store__entrance {
+        top: -120%;
+        left: 50%;
+    }
+}
