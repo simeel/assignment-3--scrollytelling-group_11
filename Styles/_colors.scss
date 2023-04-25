@@ -1,6 +1,11 @@
 $backgroundOdd: #3984cf;
 $backgroundEven: #306daa;
-$storeWall: #c09658;
+$storeWall: #f6967e;
+$storeSign: #ee1b2e;
+$storeInterior: #d8cc44;
+$black: #000;
+$white: #fff;
+$gray: #777;
 
 body > div:nth-of-type(odd) {
     background-color: $backgroundOdd;
@@ -12,5 +17,21 @@ body > div:nth-of-type(even) {
 .scene__container--2 {
     .store__wall--top, .store__wall--left, .store__wall--right {
         background-color: $storeWall;
+    }
+    .store__sign {
+        background-color: $storeSign;
+    }
+    .store__entrance {
+        background-color: $storeInterior;
+    }
+    #billy__hair {
+        stroke: $black;
+    }
+    .st0, .st1 {
+        fill: $white;
+        stroke: $black;
+    }
+    .st0 {
+        fill: $gray
     }
 }

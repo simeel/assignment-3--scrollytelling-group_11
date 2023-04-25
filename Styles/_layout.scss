@@ -1,6 +1,6 @@
 .scene__container--2 {
-    overflow: hidden;
-    .store__wall--right, .store__wall--left, .store__entrance {
+//    overflow: hidden;
+    .store__wall--right, .store__wall--left, .store__entrance, svg {
         position: relative;
         left: 70%;
     }
@@ -11,5 +11,27 @@
     .store__entrance {
         top: -120%;
         left: 50%;
+    }
+    .store__sign {
+        position: relative;
+        left: 35%;
+        top: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    svg {
+        left: -6%;
+        top: -235%;
+        z-index: 6;
+        transform: scale(0.9);
+    }
+    svg:nth-of-type(2) {
+        top: -353%;
+        z-index: 4;
+    }
+    svg:nth-of-type(3) {
+        top: -475%;
+        z-index: 4;
     }
 }
