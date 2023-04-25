@@ -48,6 +48,11 @@ body > div {
         height: 50%;
         border: 3px solid black;
         border-radius: 10px;
+        div {
+            height: 65%;
+            aspect-ratio: 1;
+            border-radius: 50%;
+        }
     }
     .store__entrance {
         width: 20%;
