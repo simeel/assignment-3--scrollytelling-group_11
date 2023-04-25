@@ -20,6 +20,9 @@ body > div:nth-of-type(even) {
     }
     .store__sign {
         background-color: $storeSign;
+        div {
+            background-color: $black;
+        }
     }
     .store__entrance {
         background-color: $storeInterior;
