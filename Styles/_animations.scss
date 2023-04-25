@@ -4,7 +4,7 @@
     }
 
     50% {
-        transform: translateX(-50%);
+        transform: translateX(-40%);
     }
 
     100% {
@@ -12,6 +12,9 @@
     }
 }
 
-#people {
+#person-1, #person-2 {
     animation: scene-2-walk 10s ease-in-out infinite;
 }
+/*#person-2 {
+    animation-duration: 11s;
+}*/

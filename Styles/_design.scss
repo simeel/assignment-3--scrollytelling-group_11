@@ -40,22 +40,25 @@ body > div {
     .store__sign {
         width: 50%;
         height: 50%;
-        background-color: purple;
-        position: relative;
-        left: 35%;
-        top: 25%;
-        font-size: 4.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         border: 3px solid black;
         border-radius: 10px;
     }
     .store__entrance {
-        background-color: purple;
         width: 20%;
         border-top: 3px solid black;
         border-right: 3px solid black;
+    }
+    #billy__hair {
+        fill: none;
+        stroke-width: 10;
+        stroke-miterlimit: 10;
+    }
+    .st0, .st1 {
+        stroke-width: 3;
+        stroke-miterlimit: 10;
+    }
+    .st1 {
+        stroke-width: 5;
     }
 }
 
