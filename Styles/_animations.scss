@@ -1,20 +1,48 @@
 @keyframes scene-2-walk {
     0% {
-        transform: translateX(0);
+        transform: translate(0, 0);
     }
-
+    2% {
+        transform: translate(-8%, 1%);
+    }
+    4% {
+        transform: translate(-16%, 0);
+    }
+    6% {
+        transform: translate(-24%, 1%);
+    }
+    8% {
+        transform: translate(-32%, 0);
+    }
+    10% {
+        transform: translate(-40%, 0);
+    }
     50% {
         transform: translateX(-40%);
     }
-
+    52% {
+        transform: translate(-32%, 0);
+    }
+    54% {
+        transform: translate(-24%, 1%);
+    }
+    56% {
+        transform: translate(-16%, 0);
+    }
+    58% {
+        transform: translate(-8%, 1%);
+    }
+    60% {
+        transform: translate(0, 0);
+    }
     100% {
-        transform: translateX(0);
+        transform: translate(0, 0);
     }
 }
 
 #person-1, #person-2 {
-    animation: scene-2-walk 10s ease-in-out infinite;
+    animation: scene-2-walk 45s linear infinite;
 }
-/*#person-2 {
-    animation-duration: 11s;
-}*/
+#person-2 {
+    animation-delay: 1.5s;
+}
