@@ -1,5 +1,4 @@
 // Old, remove when all scenes have content
-$backgroundOdd: #3984cf;
 $backgroundEven: #306daa;
 
 $storeWallLight: #f6967e;
@@ -8,11 +7,12 @@ $storeSign: #ee1b2e;
 $storeInterior: #d8cc44;
 $black: #000;
 $white: #fff;
-$gray: #777;
-$blue: #5858ff;
+$gray: #999;
+$lightBlue: #72b1ef;
+$darkBlue: #5858ff;
 
 body > div:nth-of-type(odd) {
-  background-color: $backgroundOdd;
+  background-color: $lightBlue;
 }
 body > div:nth-of-type(even) {
   background-color: $backgroundEven;
@@ -20,52 +20,73 @@ body > div:nth-of-type(even) {
 .window__container {
     background-color: $black;
     .window__pane {
-        background-color: $blue;
+        background-color: $darkBlue;
+    }
+}
+
+.scene__container--1, .scene__container--5 {
+    svg {
+        background-image: linear-gradient($lightBlue 40%, $storeWallLight 40%);
+    }
+    .cls-1,
+    .cls-3 {
+        stroke: $black;
+    }
+    .cls-3 {
+        fill: $white;
+    }
+    #billy-shoe, #billy-shoe-2 {
+        fill: $gray;
+    }
+    .person__legs > * {
+        background-color: $gray;
+    }
+    .person__shoes > * {
+        background-color: $white;
     }
 }
 
 .scene__container--2 {
-  .store__wall--top,
-  .store__wall--left,
-  .store__wall--right {
-    // Pure CSS brick pattern trick found here: https://projects.verou.me/css3patterns/#bricks
-    background-color: $white;
-    background-image: linear-gradient(335deg, $storeWallDark 23px, transparent 23px),
-    linear-gradient(155deg, $storeWallLight 23px, transparent 23px),
-    linear-gradient(335deg, $storeWallDark 23px, transparent 23px),
-    linear-gradient(155deg, $storeWallLight 23px, transparent 23px);
-    background-size: 58px 58px;
-    background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
-  }
-  .store__sign {
-    background-color: $storeSign;
-    div {
-      background-color: $black;
+    .store__wall--top,
+    .store__wall--left,
+    .store__wall--right {
+        // Pure CSS brick pattern trick found here: https://projects.verou.me/css3patterns/#bricks
+        background-color: $white;
+        background-image: linear-gradient(335deg, $storeWallDark 23px, transparent 23px),
+        linear-gradient(155deg, $storeWallLight 23px, transparent 23px),
+        linear-gradient(335deg, $storeWallDark 23px, transparent 23px),
+        linear-gradient(155deg, $storeWallLight 23px, transparent 23px);
+        background-size: 58px 58px;
+        background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
     }
-  }
-  .store__entrance {
-    background-color: $storeInterior;
-  }
-  #billy__hair {
-    stroke: $black;
-  }
-  .st0,
-  .st1 {
-    fill: $white;
-    stroke: $black;
-  }
-  .st0 {
-    fill: $gray;
-  }
+    .store__sign {
+        background-color: $storeSign;
+        div {
+            background-color: $black;
+        }
+    }
+    .store__entrance {
+        background-color: $storeInterior;
+    }
+    #billy__hair {
+        stroke: $black;
+    }
+    .st0,
+    .st1 {
+        fill: $white;
+        stroke: $black;
+    }
+    .st0 {
+        fill: $gray;
+    }
 }
 
-.scene__container--5 {
-  .cls-1,
-  .cls-3 {
-    stroke: $black;
-  }
 
-  .cls-3 {
-    fill: $white;
-  }
+.scene__container--5 {
+    #billy-shoe, #billy-shoe-2 {
+        fill: $white;
+    }
+    .person__shoes > * {
+        background-color: $gray;
+    }
 }
