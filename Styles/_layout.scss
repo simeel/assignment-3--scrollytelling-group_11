@@ -4,9 +4,24 @@
         position: relative;
         left: 70%;
     }
+    .store__wall--left, .store__wall--right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .window__container {
+            margin-bottom: 40%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            row-gap: 2%;
+        }
+    }
     .store__wall--left {
         left: 0;
         top: -60%;
+        .window__container {
+            margin-bottom: 24%;
+        }
     }
     .store__entrance {
         top: -120%;

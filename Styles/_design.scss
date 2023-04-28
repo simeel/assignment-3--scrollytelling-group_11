@@ -15,7 +15,6 @@ html::-webkit-scrollbar {
 body > div {
     height: 100vh;
     width: 100%;
-    display: none;
     svg {
         height: 100%;
         width: 100%;
@@ -25,9 +24,11 @@ body > div {
 
 
 //Scene 1
+.scene__container--1 {
+    display: none;
+}
 
 .scene__container--2 {
-    display: revert;
     .store__wall--top {
         width: 100%;
         height: $topWallHeight;
@@ -35,6 +36,15 @@ body > div {
     .store__wall--left, .store__wall--right, .store__entrance {
         width: 50%;
         height: 100%-$topWallHeight;
+        .window__container {
+            width: 50%;
+            height: 50%;
+            border: 3px solid black;
+            .window__pane {
+                height: 49%;
+                width: 49%;
+            }
+        }
     }
     .store__wall--left {
         border-right: 3px solid black;
@@ -76,7 +86,20 @@ body > div {
 }
 
 //Scene 3
+.scene__container--3 {
+    display: none;
+}
 
 //Scene 4
+.scene__container--4 {
+    display: none;
+}
 
 //Scene 5
+.scene__container--5 {
+    .cls-1,
+    .cls-3 {
+        stroke-miterlimit: 10;
+    }
+}
+  
