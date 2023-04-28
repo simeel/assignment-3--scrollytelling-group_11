@@ -4,21 +4,26 @@ $topWallHeight: 40%;
     padding: 0;
     margin: 0;
 }
+
 //Hides scrollbar in Firefox
 html {
     scrollbar-width: none;
 }
+
 //Hides scrollbar in Chrome / Safari
 html::-webkit-scrollbar {
     display: none;
 }
-body > div {
+
+body>div {
     height: 100vh;
     width: 100%;
+
     svg {
         height: 100%;
         width: 100%;
     }
+
     overflow: hidden;
 }
 
@@ -33,61 +38,112 @@ body > div {
         width: 100%;
         height: $topWallHeight;
     }
-    .store__wall--left, .store__wall--right, .store__entrance {
+
+    .store__wall--left,
+    .store__wall--right,
+    .store__entrance {
         width: 50%;
         height: 100%-$topWallHeight;
+
         .window__container {
             width: 50%;
             height: 50%;
             border: 3px solid black;
+
             .window__pane {
                 height: 49%;
                 width: 49%;
             }
         }
     }
+
     .store__wall--left {
         border-right: 3px solid black;
         z-index: 5;
         box-shadow: 7px 5px 5px #2e3035;
     }
+
     .store__wall--right {
         width: 30%;
     }
+
     .store__sign {
         width: 50%;
         height: 50%;
         border: 3px solid black;
         border-radius: 10px;
         box-shadow: 5px 5px 5px #2e3035;
+
         div {
             height: 65%;
             aspect-ratio: 1;
             border-radius: 50%;
         }
     }
+
     .store__entrance {
         width: 20%;
         border-top: 3px solid black;
         border-right: 3px solid black;
     }
+
     #billy__hair {
         fill: none;
         stroke-width: 10;
         stroke-miterlimit: 10;
     }
-    .st0, .st1 {
+
+    .st0,
+    .st1 {
         stroke-width: 3;
         stroke-miterlimit: 10;
     }
+
     .st1 {
         stroke-width: 5;
     }
+
+
 }
 
 //Scene 3
 .scene__container--3 {
-    display: none;
+//    display: none;
+
+    .cls-1 {
+        stroke-width: 0.91px;
+    }
+
+    .cls-1,
+    .cls-2,
+    .scene-4__box,
+    .scene-4__shoe {
+        stroke-miterlimit: 10;
+    }
+
+
+    .cls-2 {
+        stroke-width: 1.12px;
+    }
+
+    .scene-4__box {
+        stroke-width: 0.79px;
+    }
+
+    .scene-4__shoe {
+        stroke-width: 1.08px;
+    }
+
+    .billy__pants,
+    .billy__chest {
+        stroke-width: 0.87px;
+        stroke-miterlimit: 10;
+    }
+
+    .billy__hair {
+        stroke-width: 4.2px;
+        stroke-miterlimit: 10;
+      }
 }
 
 //Scene 4
@@ -96,12 +152,15 @@ body > div {
 }
 
 //Scene 5
-.scene__container--1, .scene__container--5 {
-//    overflow: revert;
+.scene__container--1,
+.scene__container--5 {
+
+    //    overflow: revert;
     .cls-1,
     .cls-3 {
         stroke-miterlimit: 10;
     }
+
     .person__container {
         position: relative;
         top: -110%;
@@ -111,26 +170,32 @@ body > div {
         display: flex;
         flex-direction: column;
         justify-content: center;
+
         .person__legs {
             height: 80%;
             width: 100%;
             display: flex;
             justify-content: center;
+
             * {
                 height: 105%;
                 width: 30%;
                 border: 1px solid black;
             }
+
             *:nth-of-type(1) {
                 border-left: 2px solid black;
             }
+
             *:nth-of-type(2) {
                 border-right: 2px solid black;
             }
         }
+
         .person__shoes {
             width: 100%;
             height: 20%;
+
             * {
                 position: relative;
                 border: 1px solid black;
@@ -138,22 +203,26 @@ body > div {
                 width: 60%;
                 height: 100%;
             }
+
             *:nth-of-type(2) {
                 top: -110%;
                 left: 40%;
             }
         }
     }
+
     .person__container:nth-of-type(2) {
         top: -202%;
         left: 15%;
         z-index: 1;
     }
+
     .person__container:nth-of-type(3) {
         top: -305%;
         left: 65%;
         z-index: 1;
     }
+
     .person__container:nth-of-type(4) {
         top: -415%;
         left: 80%;
