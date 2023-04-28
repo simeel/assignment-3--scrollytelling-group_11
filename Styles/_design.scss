@@ -39,6 +39,7 @@ body > div {
     .store__wall--left {
         border-right: 3px solid black;
         z-index: 5;
+        box-shadow: 7px 5px 5px #2e3035;
     }
     .store__wall--right {
         width: 30%;
@@ -48,6 +49,7 @@ body > div {
         height: 50%;
         border: 3px solid black;
         border-radius: 10px;
+        box-shadow: 5px 5px 5px #2e3035;
         div {
             height: 65%;
             aspect-ratio: 1;
