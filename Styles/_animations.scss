@@ -46,3 +46,39 @@
 #person-2 {
     animation-delay: 1.5s;
 }
+
+
+@keyframes eye-animation {
+    0% {
+        transform: rotate(0) translate(0, 0);
+    }
+    5% {
+        transform: rotate(-10deg) translate(4%, 2%);
+    }
+    20% {
+        transform: rotate(-10deg) translate(4%, 2%);
+    }
+    25% {
+        transform: rotate(-10deg) translate(1.5%, 2%);
+    }
+    40% {
+        transform: rotate(-10deg) translate(1.5%, 2%);
+    }
+    45% {
+        transform: rotate(0) translate(0, 6%);
+    }
+    60% {
+        transform: rotate(0) translate(0, 6%);
+    }
+    65% {
+        transform: rotate(0) translate(0, 0);
+    }
+    100% {
+        transform: rotate(0) translate(0, 0);
+    }
+}
+
+.scene__container--1 #billy__eyes {
+    transform-origin: center;
+    animation: eye-animation 10s ease-in-out infinite;
+}
