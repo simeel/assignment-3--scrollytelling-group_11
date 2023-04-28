@@ -5,20 +5,22 @@ $topWallHeight: 40%;
     margin: 0;
 }
 
-//Hides scrollbar in Firefox
-html {
-    scrollbar-width: none;
+.scene__container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none; // Hides scrollbar in Firefox
 }
-
-//Hides scrollbar in Chrome / Safari
-html::-webkit-scrollbar {
-    display: none;
+.scene__container::-webkit-scrollbar {
+    display: none; // Hides scrollbar in Chrome / Safari
 }
-
-body>div {
+.scene__container > div {
     height: 100vh;
     width: 100%;
-
+    scroll-snap-align: start;
     svg {
         height: 100%;
         width: 100%;
