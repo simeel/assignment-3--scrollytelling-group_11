@@ -82,6 +82,10 @@ $topWallHeight: 40%;
         border-radius: 10px;
         box-shadow: 5px 5px 5px #2e3035;
 
+        a:hover {
+            cursor: default;
+        }
+
         div {
             height: 65%;
             aspect-ratio: 1;
