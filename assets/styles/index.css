@@ -572,13 +572,13 @@ div > p {
     background-color: white;
   }
 }
-.scene__container--4 .s4-billy {
+.visible.scene__container--4 .s4-billy {
   animation: scene-4-walk 4.5s linear forwards;
 }
-.scene__container--4 .s4-alarm {
+.visible.scene__container--4 .s4-alarm {
   animation: alarm-lights 0.5s linear 4s infinite;
 }
-.scene__container--4 .s4-guard {
+.visible.scene__container--4 .s4-guard {
   animation: guard-hand 0.5s ease-out 4s forwards;
 }
 
