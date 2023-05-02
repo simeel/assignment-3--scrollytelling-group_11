@@ -14,13 +14,16 @@ $topWallHeight: 40%;
     scroll-snap-type: y mandatory;
     scrollbar-width: none; // Hides scrollbar in Firefox
 }
+
 .scene__container::-webkit-scrollbar {
     display: none; // Hides scrollbar in Chrome / Safari
 }
-.scene__container > div {
+
+.scene__container>div {
     height: 100vh;
     width: 100%;
     scroll-snap-align: start;
+
     svg {
         height: 100%;
         width: 100%;
@@ -110,7 +113,7 @@ $topWallHeight: 40%;
 
 //Scene 3
 .scene__container--3 {
-//    display: none;
+    //    display: none;
 
     .cls-1 {
         stroke-width: 0.91px;
@@ -145,12 +148,45 @@ $topWallHeight: 40%;
     .billy__hair {
         stroke-width: 4.2px;
         stroke-miterlimit: 10;
-      }
+    }
 }
 
 //Scene 4
 .scene__container--4 {
-    display: none;
+//    display: none;
+
+    .s4-billy {
+        position: relative;
+        bottom: -20%;
+        left: 30%;
+        width: 43%;
+    }
+
+    .s4-billy__hair {
+        stroke-width: 6.8px;
+    }
+
+    .s4-billy__body,
+    .s4-billy__head,
+    .s4-billy__hair {
+        stroke-miterlimit: 10;
+    }
+
+    .s4-billy__body {
+        stroke-width: 0.73px;
+    }
+
+    .s4-guard {
+        position: relative;
+        width: 40%;
+        left: -30%;
+        bottom: -100%; // change in animation
+    }
+
+    .s4-guard__hand {
+        stroke-miterlimit: 10;
+        stroke-width: 0.89px;
+    }
 }
 
 //Scene 5
