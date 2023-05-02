@@ -31,7 +31,7 @@ body > div:nth-of-type(even) {
 .scene__container--1 #billy-shoe-2,
 .scene__container--5 #billy-shoe,
 .scene__container--5 #billy-shoe-2 {
-  fill: #999;
+  fill: #fff;
 }
 .scene__container--1 .person__legs > *,
 .scene__container--5 .person__legs > * {
@@ -39,7 +39,7 @@ body > div:nth-of-type(even) {
 }
 .scene__container--1 .person__shoes > *,
 .scene__container--5 .person__shoes > * {
-  background-color: #fff;
+  background-color: #72b1ef;
 }
 .scene__container--1 #table,
 .scene__container--5 #table {
@@ -123,7 +123,7 @@ body > div:nth-of-type(even) {
   fill: #fff;
 }
 .scene__container--5 .person__shoes > * {
-  background-color: #999;
+  background-color: #f5505d;
 }
 
 * {
@@ -486,8 +486,7 @@ div > p {
     transform: translate(0, 0);
   }
 }
-#person-1,
-#person-2 {
+.visible #person-1, .visible #person-2 {
   animation: scene-2-walk 45s linear infinite;
 }
 
@@ -524,11 +523,21 @@ div > p {
     transform: rotate(0) translate(0, 0);
   }
 }
-.scene__container--1 #billy__eyes {
+.visible.scene__container--1 #billy__eyes {
   transform-origin: center;
   animation: eye-animation 10s ease-in-out infinite;
 }
 
+@keyframes blur-animation {
+  from {
+    filter: blur(0);
+  }
+  to {
+    filter: blur(10px);
+  }
+}
+.visible.scene__container--5 .person__container {
+  animation: blur-animation 5s linear forwards;
 @keyframes guard-hand {
   0% {
     transform: translateY(0);
