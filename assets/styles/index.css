@@ -1,0 +1,459 @@
+body > div:nth-of-type(odd) {
+  background-color: #72b1ef;
+}
+
+body > div:nth-of-type(even) {
+  background-color: #306daa;
+}
+
+.window__container {
+  background-color: #000;
+}
+.window__container .window__pane {
+  background-color: #5858ff;
+}
+
+.scene__container--1 svg,
+.scene__container--5 svg {
+  background-image: linear-gradient(#72b1ef 40%, #f6967e 40%);
+}
+.scene__container--1 .cls-1,
+.scene__container--1 .cls-3,
+.scene__container--5 .cls-1,
+.scene__container--5 .cls-3 {
+  stroke: #000;
+}
+.scene__container--1 .cls-3,
+.scene__container--5 .cls-3 {
+  fill: #fff;
+}
+.scene__container--1 .person__legs > *,
+.scene__container--5 .person__legs > * {
+  background-color: #999;
+}
+.scene__container--1 .person__shoes > *,
+.scene__container--5 .person__shoes > * {
+  background-color: #5858ff;
+}
+.scene__container--1 #table,
+.scene__container--5 #table {
+  fill: #ae5e2f;
+}
+
+.scene__container--2 .store__wall--top,
+.scene__container--2 .store__wall--left,
+.scene__container--2 .store__wall--right {
+  background-color: #fff;
+  background-image: linear-gradient(335deg, #dd8771 23px, transparent 23px), linear-gradient(155deg, #f6967e 23px, transparent 23px), linear-gradient(335deg, #dd8771 23px, transparent 23px), linear-gradient(155deg, #f6967e 23px, transparent 23px);
+  background-size: 58px 58px;
+  background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+}
+.scene__container--2 .store__sign {
+  background-color: #ee1b2e;
+}
+.scene__container--2 .store__sign div {
+  background-color: #000;
+}
+.scene__container--2 .store__entrance {
+  background-color: #d8cc44;
+}
+.scene__container--2 #billy__hair {
+  stroke: #000;
+}
+.scene__container--2 .st0,
+.scene__container--2 .st1 {
+  fill: #fff;
+  stroke: #000;
+}
+.scene__container--2 .st0 {
+  fill: #999;
+}
+
+.scene__container--3 .cls-1,
+.scene__container--3 .cls-2,
+.scene__container--3 .scene-4__shoe {
+  stroke: #000;
+  fill: #fff;
+}
+.scene__container--3 .scene-4__box {
+  stroke: #000;
+  fill: #f6967e;
+}
+.scene__container--3 .bench {
+  fill: #dd8771;
+}
+.scene__container--3 .billy__pants,
+.scene__container--3 .billy__chest {
+  fill: #fff;
+  stroke: #000;
+}
+.scene__container--3 .billy__hair {
+  fill: none;
+  stroke: #000;
+}
+
+.scene__container--5 #billy-shoe,
+.scene__container--5 #billy-shoe-2 {
+  fill: #fff;
+}
+.scene__container--5 .person__shoes > * {
+  background-color: #ee1b2e;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.scene__container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: smooth;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+}
+
+.scene__container::-webkit-scrollbar {
+  display: none;
+}
+
+.scene__container > div {
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+  overflow: hidden;
+}
+.scene__container > div svg {
+  height: 100%;
+  width: 100%;
+}
+
+/*.scene__container--1 {
+    display: none;
+}*/
+.scene__container--2 .store__wall--top {
+  width: 100%;
+  height: 40%;
+}
+.scene__container--2 .store__wall--left,
+.scene__container--2 .store__wall--right,
+.scene__container--2 .store__entrance {
+  width: 50%;
+  height: 60%;
+}
+.scene__container--2 .store__wall--left .window__container,
+.scene__container--2 .store__wall--right .window__container,
+.scene__container--2 .store__entrance .window__container {
+  width: 50%;
+  height: 50%;
+  border: 3px solid black;
+}
+.scene__container--2 .store__wall--left .window__container .window__pane,
+.scene__container--2 .store__wall--right .window__container .window__pane,
+.scene__container--2 .store__entrance .window__container .window__pane {
+  height: 49%;
+  width: 49%;
+}
+.scene__container--2 .store__wall--left {
+  border-right: 3px solid black;
+  z-index: 5;
+  box-shadow: 7px 5px 5px #2e3035;
+}
+.scene__container--2 .store__wall--right {
+  width: 30%;
+}
+.scene__container--2 .store__sign {
+  width: 50%;
+  height: 50%;
+  border: 3px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #2e3035;
+}
+.scene__container--2 .store__sign div {
+  height: 65%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+.scene__container--2 .store__entrance {
+  width: 20%;
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+}
+.scene__container--2 #billy__hair {
+  fill: none;
+  stroke-width: 10;
+  stroke-miterlimit: 10;
+}
+.scene__container--2 .st0,
+.scene__container--2 .st1 {
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}
+.scene__container--2 .st1 {
+  stroke-width: 5;
+}
+
+.scene__container--3 .cls-1 {
+  stroke-width: 0.91px;
+}
+.scene__container--3 .cls-1,
+.scene__container--3 .cls-2,
+.scene__container--3 .scene-4__box,
+.scene__container--3 .scene-4__shoe {
+  stroke-miterlimit: 10;
+}
+.scene__container--3 .cls-2 {
+  stroke-width: 1.12px;
+}
+.scene__container--3 .scene-4__box {
+  stroke-width: 0.79px;
+}
+.scene__container--3 .scene-4__shoe {
+  stroke-width: 1.08px;
+}
+.scene__container--3 .billy__pants,
+.scene__container--3 .billy__chest {
+  stroke-width: 0.87px;
+  stroke-miterlimit: 10;
+}
+.scene__container--3 .billy__hair {
+  stroke-width: 4.2px;
+  stroke-miterlimit: 10;
+}
+
+.scene__container--4 {
+  display: none;
+}
+
+.scene__container--1 .cls-1,
+.scene__container--1 .cls-3,
+.scene__container--5 .cls-1,
+.scene__container--5 .cls-3 {
+  stroke-miterlimit: 10;
+}
+.scene__container--1 .person__container,
+.scene__container--5 .person__container {
+  position: relative;
+  top: -110%;
+  left: 1%;
+  height: 100%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.scene__container--1 .person__container .person__legs,
+.scene__container--5 .person__container .person__legs {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.scene__container--1 .person__container .person__legs *,
+.scene__container--5 .person__container .person__legs * {
+  height: 105%;
+  width: 30%;
+  border: 1px solid black;
+}
+.scene__container--1 .person__container .person__legs *:nth-of-type(1),
+.scene__container--5 .person__container .person__legs *:nth-of-type(1) {
+  border-left: 2px solid black;
+}
+.scene__container--1 .person__container .person__legs *:nth-of-type(2),
+.scene__container--5 .person__container .person__legs *:nth-of-type(2) {
+  border-right: 2px solid black;
+}
+.scene__container--1 .person__container .person__shoes,
+.scene__container--5 .person__container .person__shoes {
+  width: 100%;
+  height: 20%;
+}
+.scene__container--1 .person__container .person__shoes *,
+.scene__container--5 .person__container .person__shoes * {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 60%;
+  height: 100%;
+}
+.scene__container--1 .person__container .person__shoes *:nth-of-type(2),
+.scene__container--5 .person__container .person__shoes *:nth-of-type(2) {
+  top: -110%;
+  left: 40%;
+}
+.scene__container--1 .person__container:nth-of-type(2),
+.scene__container--5 .person__container:nth-of-type(2) {
+  top: -202%;
+  left: 15%;
+  z-index: 1;
+}
+.scene__container--1 .person__container:nth-of-type(3),
+.scene__container--5 .person__container:nth-of-type(3) {
+  top: -305%;
+  left: 65%;
+  z-index: 1;
+}
+.scene__container--1 .person__container:nth-of-type(4),
+.scene__container--5 .person__container:nth-of-type(4) {
+  top: -415%;
+  left: 80%;
+}
+
+.scene__container--2 {
+  overflow: hidden;
+}
+.scene__container--2 .store__wall--right, .scene__container--2 .store__wall--left, .scene__container--2 .store__entrance, .scene__container--2 svg {
+  position: relative;
+  left: 70%;
+}
+.scene__container--2 .store__wall--left, .scene__container--2 .store__wall--right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scene__container--2 .store__wall--left .window__container, .scene__container--2 .store__wall--right .window__container {
+  margin-bottom: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 2%;
+}
+.scene__container--2 .store__wall--left {
+  left: 0;
+  top: -60%;
+}
+.scene__container--2 .store__wall--left .window__container {
+  margin-bottom: 24%;
+}
+.scene__container--2 .store__entrance {
+  top: -120%;
+  left: 50%;
+}
+.scene__container--2 .store__sign {
+  position: relative;
+  left: 35%;
+  top: 25%;
+  display: grid;
+  grid-template-columns: 1rem 1fr 1rem;
+  grid-template-rows: 1rem 1fr 1rem;
+  grid-template-areas: "tl . tr" ". sign ." "bl . br";
+  justify-items: center;
+  align-items: center;
+}
+.scene__container--2 .store__sign p {
+  grid-area: sign;
+}
+.scene__container--2 .store__sign div:nth-of-type(1) {
+  grid-area: tl;
+}
+.scene__container--2 .store__sign div:nth-of-type(2) {
+  grid-area: tr;
+}
+.scene__container--2 .store__sign div:nth-of-type(3) {
+  grid-area: bl;
+}
+.scene__container--2 .store__sign div:nth-of-type(4) {
+  grid-area: br;
+}
+.scene__container--2 svg {
+  left: -6%;
+  top: -220%;
+  z-index: 6;
+}
+.scene__container--2 svg:nth-of-type(2) {
+  top: -316%;
+  z-index: 4;
+}
+
+div > p {
+  font-size: 2rem;
+}
+
+.scene__container--2 .store__sign > p {
+  font-size: 4.5rem;
+}
+
+@keyframes scene-2-walk {
+  0% {
+    transform: translate(0, 0);
+  }
+  2% {
+    transform: translate(-8%, 1%);
+  }
+  4% {
+    transform: translate(-16%, 0);
+  }
+  6% {
+    transform: translate(-24%, 1%);
+  }
+  8% {
+    transform: translate(-32%, 0);
+  }
+  10% {
+    transform: translate(-40%, 0);
+  }
+  50% {
+    transform: translateX(-40%);
+  }
+  52% {
+    transform: translate(-32%, 0);
+  }
+  54% {
+    transform: translate(-24%, 1%);
+  }
+  56% {
+    transform: translate(-16%, 0);
+  }
+  58% {
+    transform: translate(-8%, 1%);
+  }
+  60% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+#person-1, #person-2 {
+  animation: scene-2-walk 45s linear infinite;
+}
+
+#person-2 {
+  animation-delay: 1.5s;
+}
+
+@keyframes eye-animation {
+  0% {
+    transform: rotate(0) translate(0, 0);
+  }
+  5% {
+    transform: rotate(-10deg) translate(4%, 2%);
+  }
+  20% {
+    transform: rotate(-10deg) translate(4%, 2%);
+  }
+  25% {
+    transform: rotate(-10deg) translate(1.5%, 2%);
+  }
+  40% {
+    transform: rotate(-10deg) translate(1.5%, 2%);
+  }
+  45% {
+    transform: rotate(0) translate(0, 6%);
+  }
+  60% {
+    transform: rotate(0) translate(0, 6%);
+  }
+  65% {
+    transform: rotate(0) translate(0, 0);
+  }
+  100% {
+    transform: rotate(0) translate(0, 0);
+  }
+}
+.scene__container--1 #billy__eyes {
+  transform-origin: center;
+  animation: eye-animation 10s ease-in-out infinite;
+}/*# sourceMappingURL=index.css.map */
