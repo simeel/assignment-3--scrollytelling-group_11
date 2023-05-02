@@ -184,3 +184,16 @@
         animation: guard-hand .5s ease-out 4s forwards;
     }
 }
+
+@keyframes blur-animation {
+    from {
+        filter: blur(0);
+    }
+    to {
+        filter: blur(10px);
+    }
+}
+
+.scene__container--5 .person__container {
+    animation: blur-animation 5s linear forwards;
+}
