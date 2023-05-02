@@ -6,5 +6,5 @@
     * "Intermission" text ?
     * Shoe store name
     * Finish scene 3
-    * Intersection observer
-    * animation scene 3, 4 and some on 1
+    * animation scene 3
+    * pleases use landscape mode :&#41;

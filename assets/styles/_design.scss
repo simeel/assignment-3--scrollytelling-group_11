@@ -1,4 +1,5 @@
 $topWallHeight: 40%;
+$borderWidth: 0.4vh;
 
 * {
     padding: 0;
@@ -56,7 +57,7 @@ $topWallHeight: 40%;
         .window__container {
             width: 50%;
             height: 50%;
-            border: 3px solid black;
+            border: $borderWidth solid black;
 
             .window__pane {
                 height: 49%;
@@ -66,7 +67,7 @@ $topWallHeight: 40%;
     }
 
     .store__wall--left {
-        border-right: 3px solid black;
+        border-right: $borderWidth solid black;
         z-index: 5;
         box-shadow: 7px 5px 5px #2e3035;
     }
@@ -78,12 +79,12 @@ $topWallHeight: 40%;
     .store__sign {
         width: 50%;
         height: 50%;
-        border: 3px solid black;
+        border: $borderWidth solid black;
         border-radius: 10px;
         box-shadow: 5px 5px 5px #2e3035;
 
         div {
-            height: 65%;
+            height: 1.5vh;
             aspect-ratio: 1;
             border-radius: 50%;
         }
@@ -236,7 +237,7 @@ $topWallHeight: 40%;
             * {
                 height: 105%;
                 width: 30%;
-                border: 1px solid black;
+                border: $borderWidth / 3 solid black;
             }
 
             *:nth-of-type(1) {
@@ -254,7 +255,7 @@ $topWallHeight: 40%;
 
             * {
                 position: relative;
-                border: 1px solid black;
+                border: $borderWidth / 3 solid black;
                 border-radius: 50%;
                 width: 60%;
                 height: 100%;
@@ -282,5 +283,18 @@ $topWallHeight: 40%;
     .person__container:nth-of-type(4) {
         top: -415%;
         left: 80%;
+    }
+}
+
+.orientation-disclaimer {
+    display: none;
+}
+
+@media (orientation: portrait) {
+    .scene__container > div:not(:last-child) {
+        display: none;
+    }
+    .orientation-disclaimer {
+        display: revert;
     }
 }
