@@ -40,8 +40,9 @@
             "bl . br";
         justify-items: center;
         align-items: center;
-        p {
+        a {
             grid-area: sign;
+            z-index: 10;
         }
         div:nth-of-type(1) {
             grid-area: tl;

@@ -57,6 +57,9 @@ body > div:nth-of-type(even) {
 .scene__container--2 .store__sign {
   background-color: #ee1b2e;
 }
+.scene__container--2 .store__sign a {
+  color: #000;
+}
 .scene__container--2 .store__sign div {
   background-color: #000;
 }
@@ -199,6 +202,9 @@ body > div:nth-of-type(even) {
   border: 0.4vh solid black;
   border-radius: 10px;
   box-shadow: 5px 5px 5px #2e3035;
+}
+.scene__container--2 .store__sign a:hover {
+  cursor: default;
 }
 .scene__container--2 .store__sign div {
   height: 1.5vh;
@@ -420,8 +426,9 @@ body > div:nth-of-type(even) {
   justify-items: center;
   align-items: center;
 }
-.scene__container--2 .store__sign p {
+.scene__container--2 .store__sign a {
   grid-area: sign;
+  z-index: 10;
 }
 .scene__container--2 .store__sign div:nth-of-type(1) {
   grid-area: tl;
@@ -445,8 +452,9 @@ body > div:nth-of-type(even) {
   z-index: 4;
 }
 
-.scene__container--2 .store__sign > p {
+.scene__container--2 .store__sign > a {
   font-size: 4.5vw;
+  text-decoration: none;
 }
 
 @keyframes scene-2-walk {

@@ -82,6 +82,10 @@ body>div:nth-of-type(even) {
     .store__sign {
         background-color: $darkRed;
 
+        a {
+            color: $black;
+        }
+
         div {
             background-color: $black;
         }

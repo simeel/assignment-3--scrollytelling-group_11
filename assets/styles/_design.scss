@@ -83,6 +83,10 @@ $borderWidth: 0.4vh;
         border-radius: 10px;
         box-shadow: 5px 5px 5px #2e3035;
 
+        a:hover {
+            cursor: default;
+        }
+
         div {
             height: 1.5vh;
             aspect-ratio: 1;
