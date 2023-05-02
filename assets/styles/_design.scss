@@ -33,12 +33,15 @@ $topWallHeight: 40%;
 }
 
 
-//Scene 1
-/*.scene__container--1 {
+// scene 1
+.scene__container--1 {
     display: none;
-}*/
+}
 
+// scene 2
 .scene__container--2 {
+display: none;
+
     .store__wall--top {
         width: 100%;
         height: $topWallHeight;
@@ -111,9 +114,9 @@ $topWallHeight: 40%;
 
 }
 
-//Scene 3
+// scene 3
 .scene__container--3 {
-    //    display: none;
+    display: none;
 
     .cls-1 {
         stroke-width: 0.91px;
@@ -157,7 +160,7 @@ $topWallHeight: 40%;
 
     .s4-billy {
         position: relative;
-        bottom: -20%;
+        bottom: -10%;
         left: 30%;
         width: 43%;
     }
@@ -180,12 +183,27 @@ $topWallHeight: 40%;
         position: relative;
         width: 40%;
         left: -30%;
-        bottom: -100%; // change in animation
+        bottom: -100%;
     }
 
     .s4-guard__hand {
         stroke-miterlimit: 10;
         stroke-width: 0.89px;
+    }
+
+    .s4-alarm-lights {
+        top: 10vh;
+        width: 100%;
+        height: 10vw;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+
+        .s4-alarm {
+            width: 10%;
+            height: 100%;
+            border-radius: 100%;
+        }
     }
 }
 
