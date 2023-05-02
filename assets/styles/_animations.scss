@@ -2,47 +2,61 @@
     0% {
         transform: translate(0, 0);
     }
+
     2% {
         transform: translate(-8%, 1%);
     }
+
     4% {
         transform: translate(-16%, 0);
     }
+
     6% {
         transform: translate(-24%, 1%);
     }
+
     8% {
         transform: translate(-32%, 0);
     }
+
     10% {
         transform: translate(-40%, 0);
     }
+
     50% {
         transform: translateX(-40%);
     }
+
     52% {
         transform: translate(-32%, 0);
     }
+
     54% {
         transform: translate(-24%, 1%);
     }
+
     56% {
         transform: translate(-16%, 0);
     }
+
     58% {
         transform: translate(-8%, 1%);
     }
+
     60% {
         transform: translate(0, 0);
     }
+
     100% {
         transform: translate(0, 0);
     }
 }
 
-#person-1, #person-2 {
+#person-1,
+#person-2 {
     animation: scene-2-walk 45s linear infinite;
 }
+
 #person-2 {
     animation-delay: 1.5s;
 }
@@ -52,27 +66,35 @@
     0% {
         transform: rotate(0) translate(0, 0);
     }
+
     5% {
         transform: rotate(-10deg) translate(4%, 2%);
     }
+
     20% {
         transform: rotate(-10deg) translate(4%, 2%);
     }
+
     25% {
         transform: rotate(-10deg) translate(1.5%, 2%);
     }
+
     40% {
         transform: rotate(-10deg) translate(1.5%, 2%);
     }
+
     45% {
         transform: rotate(0) translate(0, 6%);
     }
+
     60% {
         transform: rotate(0) translate(0, 6%);
     }
+
     65% {
         transform: rotate(0) translate(0, 0);
     }
+
     100% {
         transform: rotate(0) translate(0, 0);
     }
@@ -81,4 +103,68 @@
 .scene__container--1 #billy__eyes {
     transform-origin: center;
     animation: eye-animation 10s ease-in-out infinite;
+}
+
+@keyframes guard-hand {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-40%);
+    }
+}
+
+@keyframes scene-4-walk {
+    0% {
+        transform: translateY(0);
+    }
+
+    10% {
+        transform: translateY(5%);
+    }
+
+    20% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(5%);
+    }
+
+    40% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(5%);
+    }
+
+    60% {
+        transform: translateY(0);
+    }
+
+    70% {
+        transform: translateY(5%);
+    }
+
+    80% {
+        transform: translateY(0);
+    }
+
+    90% {
+        transform: translateY(5%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.scene__container--4 .s4-guard {
+    animation: guard-hand .5s ease-out 4s forwards;
+}
+
+.scene__container--4 .s4-billy {
+    animation: scene-4-walk 4.3s linear forwards;
 }
