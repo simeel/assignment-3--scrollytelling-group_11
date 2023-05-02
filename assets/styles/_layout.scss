@@ -67,3 +67,10 @@
         z-index: 4;
     }
 }
+
+.scene__container--3 {
+    .box-1 > ellipse {
+        transform: translate(-24%, 3%);
+    }
+    
+}
