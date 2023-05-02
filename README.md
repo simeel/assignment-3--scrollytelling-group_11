@@ -3,7 +3,8 @@
 
 
 * Missing things
-    * "Intermission" text
+    * "Intermission" text ?
     * Shoe store name
-    * Make scene 4
     * Finish scene 3
+    * Intersection observer
+    * animation scene 3, 4 and some on 1
