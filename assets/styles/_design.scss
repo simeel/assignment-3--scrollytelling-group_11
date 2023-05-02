@@ -34,13 +34,13 @@ $topWallHeight: 40%;
 
 
 // scene 1
-.scene__container--1 {
+/*.scene__container--1 {
     display: none;
-}
+}*/
 
 // scene 2
 .scene__container--2 {
-display: none;
+//display: none;
 
     .store__wall--top {
         width: 100%;
@@ -116,7 +116,7 @@ display: none;
 
 // scene 3
 .scene__container--3 {
-    display: none;
+//    display: none;
 
     .cls-1 {
         stroke-width: 0.91px;
