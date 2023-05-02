@@ -103,6 +103,9 @@ body > div:nth-of-type(even) {
   fill: none;
   stroke: #000;
 }
+.scene__container--3 .box-1 > ellipse {
+  fill: pink;
+}
 
 .scene__container--4 .s4-guard__hand {
   fill: #999;
@@ -452,6 +455,10 @@ body > div:nth-of-type(even) {
   z-index: 4;
 }
 
+.scene__container--3 .box-1 > ellipse {
+  transform: translate(-24%, 3%);
+}
+
 .scene__container--2 .store__sign > a {
   font-size: 4.5vw;
   text-decoration: none;
@@ -611,4 +618,58 @@ body > div:nth-of-type(even) {
 }
 .visible.scene__container--5 .person__container {
   animation: blur-animation 5s linear forwards;
+}
+
+@keyframes box-anim {
+  from {
+    transform: rotate(0) translate(0);
+  }
+  30% {
+    transform: rotate(-25deg) translate(-32%, -5%);
+  }
+  70% {
+    transform: rotate(-25deg) translate(-32%, -5%);
+  }
+  to {
+    transform: rotate(0) translate(0);
+  }
+}
+.visible .box-1 > path:nth-of-type(2) {
+  animation: box-anim 8s linear forwards;
+}
+
+@keyframes shoe-anim {
+  0% {
+    transform: translate(-24%, 3%);
+  }
+  30% {
+    transform: translate(-24%, -11%);
+  }
+  60% {
+    transform: translate(-10%, -11%);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+.visible .box-1 > ellipse {
+  animation: shoe-anim 2s linear 2s forwards;
+}
+
+@keyframes billy-shoes {
+  0% {
+    transform: translate(0);
+  }
+  40% {
+    transform: translate(-10%, -11%);
+  }
+  70% {
+    transform: translate(-24%, -11%);
+  }
+  100% {
+    transform: translate(-24%, 3%);
+  }
+}
+.scene__container--3 .billy__legs > ellipse {
+  animation: billy-shoes 2s linear 4.2s forwards;
 }/*# sourceMappingURL=index.css.map */
