@@ -78,6 +78,9 @@ body > div:nth-of-type(even) {
   fill: #999;
 }
 
+.scene__container--3 svg {
+  background-image: linear-gradient(#d8cc44 50%, #999 50%);
+}
 .scene__container--3 .cls-1,
 .scene__container--3 .cls-2,
 .scene__container--3 .scene-4__shoe {
@@ -177,7 +180,7 @@ body > div:nth-of-type(even) {
 .scene__container--2 .store__entrance .window__container {
   width: 50%;
   height: 50%;
-  border: 3px solid black;
+  border: 0.4vh solid black;
 }
 .scene__container--2 .store__wall--left .window__container .window__pane,
 .scene__container--2 .store__wall--right .window__container .window__pane,
@@ -186,7 +189,7 @@ body > div:nth-of-type(even) {
   width: 49%;
 }
 .scene__container--2 .store__wall--left {
-  border-right: 3px solid black;
+  border-right: 0.4vh solid black;
   z-index: 5;
   box-shadow: 7px 5px 5px #2e3035;
 }
@@ -196,7 +199,7 @@ body > div:nth-of-type(even) {
 .scene__container--2 .store__sign {
   width: 50%;
   height: 50%;
-  border: 3px solid black;
+  border: 0.4vh solid black;
   border-radius: 10px;
   box-shadow: 5px 5px 5px #2e3035;
 }
@@ -204,7 +207,7 @@ body > div:nth-of-type(even) {
   cursor: default;
 }
 .scene__container--2 .store__sign div {
-  height: 65%;
+  height: 1.5vh;
   aspect-ratio: 1;
   border-radius: 50%;
 }
@@ -324,7 +327,7 @@ body > div:nth-of-type(even) {
 .scene__container--5 .person__container .person__legs * {
   height: 105%;
   width: 30%;
-  border: 1px solid black;
+  border: 0.1333333333vh solid black;
 }
 .scene__container--1 .person__container .person__legs *:nth-of-type(1),
 .scene__container--5 .person__container .person__legs *:nth-of-type(1) {
@@ -342,7 +345,7 @@ body > div:nth-of-type(even) {
 .scene__container--1 .person__container .person__shoes *,
 .scene__container--5 .person__container .person__shoes * {
   position: relative;
-  border: 1px solid black;
+  border: 0.1333333333vh solid black;
   border-radius: 50%;
   width: 60%;
   height: 100%;
@@ -370,6 +373,18 @@ body > div:nth-of-type(even) {
   left: 80%;
 }
 
+.orientation-disclaimer {
+  display: none;
+}
+
+@media (orientation: portrait) {
+  .scene__container > div:not(:last-child) {
+    display: none;
+  }
+  .orientation-disclaimer {
+    display: revert;
+  }
+}
 .scene__container--2 {
   overflow: hidden;
 }
@@ -435,10 +450,6 @@ body > div:nth-of-type(even) {
 .scene__container--2 svg:nth-of-type(2) {
   top: -316%;
   z-index: 4;
-}
-
-div > p {
-  font-size: 2rem;
 }
 
 .scene__container--2 .store__sign > a {

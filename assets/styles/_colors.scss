@@ -111,7 +111,9 @@ body>div:nth-of-type(even) {
 }
 
 .scene__container--3 {
-
+    svg {
+        background-image: linear-gradient($yellow 50%, $gray 50%);
+    }
     .cls-1,
     .cls-2,
     .scene-4__shoe {
