@@ -40,7 +40,7 @@
     }
 }
 
-#person-1, #person-2 {
+.visible #person-1, .visible #person-2 {
     animation: scene-2-walk 45s linear infinite;
 }
 #person-2 {
@@ -78,7 +78,7 @@
     }
 }
 
-.scene__container--1 #billy__eyes {
+.visible.scene__container--1 #billy__eyes {
     transform-origin: center;
     animation: eye-animation 10s ease-in-out infinite;
 }
@@ -93,6 +93,6 @@
     }
 }
 
-.scene__container--5 .person__container {
+.visible.scene__container--5 .person__container {
     animation: blur-animation 5s linear forwards;
 }
