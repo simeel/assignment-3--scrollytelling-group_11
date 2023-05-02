@@ -114,6 +114,9 @@ body > div:nth-of-type(even) {
 .scene__container--4 .s4-billy__hair {
   fill: none;
 }
+.scene__container--4 .s4-alarm {
+  background-color: #999;
+}
 
 .scene__container--5 #billy-shoe,
 .scene__container--5 #billy-shoe-2 {
@@ -153,9 +156,13 @@ body > div:nth-of-type(even) {
   width: 100%;
 }
 
-/*.scene__container--1 {
-    display: none;
-}*/
+.scene__container--1 {
+  display: none;
+}
+
+.scene__container--2 {
+  display: none;
+}
 .scene__container--2 .store__wall--top {
   width: 100%;
   height: 40%;
@@ -218,6 +225,9 @@ body > div:nth-of-type(even) {
   stroke-width: 5;
 }
 
+.scene__container--3 {
+  display: none;
+}
 .scene__container--3 .cls-1 {
   stroke-width: 0.91px;
 }
@@ -248,7 +258,7 @@ body > div:nth-of-type(even) {
 
 .scene__container--4 .s4-billy {
   position: relative;
-  bottom: -20%;
+  bottom: -10%;
   left: 30%;
   width: 43%;
 }
@@ -272,6 +282,19 @@ body > div:nth-of-type(even) {
 .scene__container--4 .s4-guard__hand {
   stroke-miterlimit: 10;
   stroke-width: 0.89px;
+}
+.scene__container--4 .s4-alarm-lights {
+  top: 10vh;
+  width: 100%;
+  height: 10vw;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+.scene__container--4 .s4-alarm-lights .s4-alarm {
+  width: 10%;
+  height: 100%;
+  border-radius: 100%;
 }
 
 .scene__container--1 .cls-1,
@@ -515,4 +538,63 @@ div > p {
 }
 .visible.scene__container--5 .person__container {
   animation: blur-animation 5s linear forwards;
+@keyframes guard-hand {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-40%);
+  }
+}
+@keyframes scene-4-walk {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  10% {
+    transform: translateY(5%) scale(99%);
+  }
+  20% {
+    transform: translateY(0) scale(98%);
+  }
+  30% {
+    transform: translateY(4%) scale(97%);
+  }
+  40% {
+    transform: translateY(0) scale(96%);
+  }
+  50% {
+    transform: translateY(3%) scale(95%);
+  }
+  60% {
+    transform: translateY(0) scale(94%);
+  }
+  70% {
+    transform: translateY(2%) scale(93%);
+  }
+  80% {
+    transform: translateY(0) scale(92%);
+  }
+  90% {
+    transform: translateY(1%) scale(91%);
+  }
+  100% {
+    transform: translateY(0) scale(90%);
+  }
+}
+@keyframes alarm-lights {
+  0% {
+    background-color: red;
+  }
+  100% {
+    background-color: white;
+  }
+}
+.scene__container--4 .s4-billy {
+  animation: scene-4-walk 4.5s linear forwards;
+}
+.scene__container--4 .s4-alarm {
+  animation: alarm-lights 0.5s linear 4s infinite;
+}
+.scene__container--4 .s4-guard {
+  animation: guard-hand 0.5s ease-out 4s forwards;
 }/*# sourceMappingURL=index.css.map */
