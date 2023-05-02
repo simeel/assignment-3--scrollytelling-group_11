@@ -114,6 +114,7 @@ body>div:nth-of-type(even) {
     svg {
         background-image: linear-gradient($yellow 50%, $gray 50%);
     }
+
     .cls-1,
     .cls-2,
     .scene-4__shoe {
@@ -177,5 +178,105 @@ body>div:nth-of-type(even) {
 
     .person__shoes>* {
         background-color: $lightRed;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+    body>div:nth-of-type(odd) {
+        background-color: $gray;
+    }
+    
+    body>div:nth-of-type(even) {
+        background-color: $gray;
+    }
+
+    .scene__container--1,
+    .scene__container--5 {
+        svg {
+            background-image: linear-gradient($white 40%, $gray 40%);
+        }
+
+        #billy-shoe,
+        #billy-shoe-2 {
+            fill: $white;
+        }
+
+        .person__legs>* {
+            background-color: $gray;
+        }
+
+        .person__shoes>* {
+            background-color: $darkRed;
+        }
+
+        #table {
+            fill: $white;
+        }
+    }
+
+    .scene__container--2 {
+
+        .store__wall--top,
+        .store__wall--left,
+        .store__wall--right {
+            background-color: $gray;
+            background-image: none;
+            background-size: 58px 58px;
+            background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+        }
+
+        .store__sign {
+            background-color: $white;
+
+            a {
+                color: $black;
+            }
+
+            div {
+                background-color: $black;
+            }
+        }
+
+        .store__entrance {
+            background-color: $white;
+        }
+
+        .window__pane {
+            background-color: $white;
+        }
+    }
+
+    .scene__container--3 {
+        svg {
+            background-image: linear-gradient($white 50%, $gray 50%);
+        }
+    
+        .cls-1,
+        .cls-2,
+        .scene-4__shoe {
+            stroke: $black;
+            fill: $white;
+        }
+    
+        .scene-4__box {
+            stroke: $white;
+            fill: $black;
+        }
+    
+        .bench {
+            fill: $black;
+            stroke: $white;
+        }
+    }
+
+    .scene__container--4 {        
+        .s4-billy__hair {
+            fill: none;
+        }
+    
+        .s4-alarm {
+            background-color: $gray;
+        }
     }
 }
