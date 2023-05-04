@@ -33,6 +33,35 @@ $borderWidth: 0.4vh;
     overflow: hidden;
 }
 
+.cover-side {
+    .cover-1 {
+        stroke-width: 1.12px;
+    }
+    
+    .cover-1,
+    .cover-2,
+    .cover-3,
+    .cover-4,
+    .cover-5 {
+        stroke-miterlimit: 10;
+    }
+    
+    .cover-2 {
+        stroke-width: 1.21px;
+    }
+    
+    .cover-3 {
+        stroke-width: 4.2px;
+    }
+    
+    .cover-4 {
+        stroke-width: .87px;
+    }
+    
+    .cover-5 {
+        stroke-width: 1.08px;
+    }    
+}
 
 // scene 1
 /*.scene__container--1 {
