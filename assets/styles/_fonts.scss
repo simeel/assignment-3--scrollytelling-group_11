@@ -17,3 +17,24 @@ a {
         font-size: 4.2vw;
     }      
 }
+
+@media (prefers-reduced-motion) {
+    .cover-side__text-box * { 
+        font-family: Arial, sans-serif;
+    }
+
+    a {
+        font-family: Arial, sans-serif;
+    }
+
+    .scene__container--2 {
+        .store__sign > p {
+            font-family: Arial, sans-serif;
+            font-size: 3.9vw;
+        }      
+    }
+
+    .text-box p {
+        font-family: Arial, sans-serif;
+    }
+}
