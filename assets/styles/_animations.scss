@@ -1,3 +1,45 @@
+@keyframes eye-animation {
+    0% {
+        transform: rotate(0) translate(0, 0);
+    }
+
+    5% {
+        transform: rotate(-10deg) translate(4%, 2%);
+    }
+
+    20% {
+        transform: rotate(-10deg) translate(4%, 2%);
+    }
+
+    25% {
+        transform: rotate(-10deg) translate(1.5%, 2%);
+    }
+
+    40% {
+        transform: rotate(-10deg) translate(1.5%, 2%);
+    }
+
+    45% {
+        transform: rotate(0) translate(0, 6%);
+    }
+
+    60% {
+        transform: rotate(0) translate(0, 6%);
+    }
+
+    65% {
+        transform: rotate(0) translate(0, 0);
+    }
+
+    100% {
+        transform: rotate(0) translate(0, 0);
+    }
+}
+.visible.scene__container--1 #billy__eyes {
+    transform-origin: center;
+    animation: eye-animation 10s ease-in-out infinite;
+}
+
 @keyframes scene-2-walk {
     0% {
         transform: translate(0, 0);
@@ -51,57 +93,65 @@
         transform: translate(0, 0);
     }
 }
-
 .visible #person-1, .visible #person-2 {
     animation: scene-2-walk 45s linear infinite;
 }
-
 #person-2 {
     animation-delay: 1.5s;
 }
 
-
-@keyframes eye-animation {
-    0% {
-        transform: rotate(0) translate(0, 0);
+@keyframes box-anim {
+    from {
+        transform: rotate(0) translate(0);
     }
-
-    5% {
-        transform: rotate(-10deg) translate(4%, 2%);
+    30% {
+        transform: rotate(-25deg) translate(-32%, -5%);
     }
-
-    20% {
-        transform: rotate(-10deg) translate(4%, 2%);
+    70% {
+        transform: rotate(-25deg) translate(-32%, -5%);
     }
-
-    25% {
-        transform: rotate(-10deg) translate(1.5%, 2%);
-    }
-
-    40% {
-        transform: rotate(-10deg) translate(1.5%, 2%);
-    }
-
-    45% {
-        transform: rotate(0) translate(0, 6%);
-    }
-
-    60% {
-        transform: rotate(0) translate(0, 6%);
-    }
-
-    65% {
-        transform: rotate(0) translate(0, 0);
-    }
-
-    100% {
-        transform: rotate(0) translate(0, 0);
+    to {
+        transform: rotate(0) translate(0);
     }
 }
-
-.visible.scene__container--1 #billy__eyes {
-    transform-origin: center;
-    animation: eye-animation 10s ease-in-out infinite;
+@keyframes shoe-anim {
+    0% {
+        transform: translate(-24%, 3%);
+    }
+    30% {
+        transform: translate(-24%, -11%);
+    }
+    60% {
+        transform: translate(-10%, -11%);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+@keyframes billy-shoes {
+    0% {
+        transform: translate(0);
+    }
+    40% {
+        transform: translate(-10%, -11%);
+    }
+    70% {
+        transform: translate(-24%, -11%);
+    }
+    100% {
+        transform: translate(-24%, 3%);
+    }
+}
+.visible.scene__container--3 {
+    .shoebox > path:nth-of-type(2) {
+        animation: box-anim 8s linear forwards;
+    }
+    .shoebox > ellipse {
+        animation: shoe-anim 2s linear 2s forwards;
+    }
+    .billy__legs > ellipse {
+        animation: billy-shoes 2s linear 4.2s forwards;
+    }
 }
 
 @keyframes guard-hand {
@@ -113,7 +163,6 @@
         transform: translateY(-40%);
     }
 }
-
 @keyframes scene-4-walk {
     0% {
         transform: translateY(0) scale(1);
@@ -159,7 +208,6 @@
         transform: translateY(0) scale(90%);
     }
 }
-
 @keyframes alarm-lights {
     0% {
         background-color: red;
@@ -169,16 +217,13 @@
         background-color: white;
     }
 }
-
 .visible.scene__container--4 {
     .s4-billy {
         animation: scene-4-walk 4.5s linear forwards;
     }
-
     .s4-alarm {
         animation: alarm-lights .5s linear 4s infinite;
     }
-
     .s4-guard {
         animation: guard-hand .5s ease-out 4s forwards;
     }
@@ -192,62 +237,61 @@
         filter: blur(10px);
     }
 }
-
 .visible.scene__container--5 .person__container {
     animation: blur-animation 5s linear forwards;
 }
 
 
-@keyframes box-anim {
+.text-box {
+    opacity: 0;
+    position: relative;
+    top: -495%;
+    z-index: 1;
+
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3%;
+    p {
+        border: calc($borderWidth / 3) solid black;
+        background-color: #c5c5c7;
+        box-shadow: 10px 5px 5px #2e3035;
+        border-radius: 10px;
+        max-width: 30%;
+        padding: 5% 3%;
+        box-sizing: border-box;
+    }
+} // Move to relevant partials
+
+@keyframes text-box-anim {
     from {
-        transform: rotate(0) translate(0);
-    }
-    30% {
-        transform: rotate(-25deg) translate(-32%, -5%);
-    }
-    70% {
-        transform: rotate(-25deg) translate(-32%, -5%);
+        opacity: 0;
     }
     to {
-        transform: rotate(0) translate(0);
+        opacity: 1;
     }
 }
-.visible .shoebox > path:nth-of-type(2) {
-    animation: box-anim 8s linear forwards;
+.scene__container--2 .text-box {
+    top: -415%;
+    z-index: 10;
 }
-
-@keyframes shoe-anim {
-    0% {
-        transform: translate(-24%, 3%);
-    }
-    30% {
-        transform: translate(-24%, -11%);
-    }
-    60% {
-        transform: translate(-10%, -11%);
-    }
-    100% {
-        transform: translate(0);
-    }
+.scene__container--3 .text-box {
+    top: -95%;
 }
-.visible .shoebox > ellipse {
-    animation: shoe-anim 2s linear 2s forwards;
+.scene__container--4 .text-box {
+    top: -115%;
 }
-
-@keyframes billy-shoes {
-    0% {
-        transform: translate(0);
-    }
-    40% {
-        transform: translate(-10%, -11%);
-    }
-    70% {
-        transform: translate(-24%, -11%);
-    }
-    100% {
-        transform: translate(-24%, 3%);
-    }
+.visible .text-box {
+    animation: text-box-anim 2s linear 10s forwards;
 }
-.visible.scene__container--3 .billy__legs > ellipse {
-    animation: billy-shoes 2s linear 4.2s forwards;
+.visible.scene__container--2 .text-box {
+    animation-delay: 5s;
+}
+.visible.scene__container--3 .text-box {
+    animation-delay: 10s;
+}
+.visible.scene__container--4 .text-box {
+    animation-delay: 7s;
+}
+.visible.scene__container--5 .text-box {
+    animation-delay: 8s;
 }

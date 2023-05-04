@@ -89,7 +89,7 @@ $borderWidth: 0.4vh;
             * {
                 height: 105%;
                 width: 30%;
-                border: $borderWidth / 3 solid black;
+                border: calc($borderWidth / 3) solid black;
             }
 
             *:nth-of-type(1) {
@@ -107,7 +107,7 @@ $borderWidth: 0.4vh;
 
             * {
                 position: relative;
-                border: $borderWidth / 3 solid black;
+                border: calc($borderWidth / 3) solid black;
                 border-radius: 50%;
                 width: 60%;
                 height: 100%;
@@ -306,7 +306,7 @@ $borderWidth: 0.4vh;
 .orientation-disclaimer {
     display: none;
     p {
-        border: $borderWidth / 3 solid black;
+        border: calc($borderWidth / 3) solid black;
         background-color: #c5c5c7;
         box-shadow: 10px 5px 5px #2e3035;
         border-radius: 10px;
