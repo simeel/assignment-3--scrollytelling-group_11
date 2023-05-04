@@ -103,8 +103,8 @@ body > div:nth-of-type(even) {
   fill: none;
   stroke: #000;
 }
-.scene__container--3 .box-1 > ellipse {
-  fill: pink;
+.scene__container--3 .shoebox > ellipse {
+  fill: #72b1ef;
 }
 
 .scene__container--4 .s4-guard__hand {
@@ -158,7 +158,7 @@ body > div:nth-of-type(even) {
   }
   .scene__container--1 .person__shoes > *,
   .scene__container--5 .person__shoes > * {
-    background-color: #ee1b2e;
+    background-color: #72b1ef;
   }
   .scene__container--1 #table,
   .scene__container--5 #table {
@@ -208,7 +208,14 @@ body > div:nth-of-type(even) {
     fill: none;
   }
   .scene__container--4 .s4-alarm {
-    background-color: #999;
+    background-color: #fff;
+  }
+  .scene__container--5 #billy-shoe,
+  .scene__container--5 #billy-shoe-2 {
+    fill: #fff;
+  }
+  .scene__container--5 .person__shoes > * {
+    background-color: #f5505d;
   }
 }
 * {
@@ -531,7 +538,7 @@ body > div:nth-of-type(even) {
   z-index: 4;
 }
 
-.scene__container--3 .box-1 > ellipse {
+.scene__container--3 .shoebox > ellipse {
   transform: translate(-24%, 3%);
 }
 
@@ -710,7 +717,7 @@ body > div:nth-of-type(even) {
     transform: rotate(0) translate(0);
   }
 }
-.visible .box-1 > path:nth-of-type(2) {
+.visible .shoebox > path:nth-of-type(2) {
   animation: box-anim 8s linear forwards;
 }
 
@@ -728,7 +735,7 @@ body > div:nth-of-type(even) {
     transform: translate(0);
   }
 }
-.visible .box-1 > ellipse {
+.visible .shoebox > ellipse {
   animation: shoe-anim 2s linear 2s forwards;
 }
 
@@ -746,6 +753,6 @@ body > div:nth-of-type(even) {
     transform: translate(-24%, 3%);
   }
 }
-.scene__container--3 .billy__legs > ellipse {
+.visible.scene__container--3 .billy__legs > ellipse {
   animation: billy-shoes 2s linear 4.2s forwards;
 }/*# sourceMappingURL=index.css.map */
