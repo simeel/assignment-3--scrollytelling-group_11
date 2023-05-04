@@ -4,6 +4,6 @@
 
 * Missing things
     * Text
+    * BEM
     * README
     * prefers-reduced-motion
-    * pleases use landscape mode :&#41;
