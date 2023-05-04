@@ -135,7 +135,15 @@ body > div:nth-of-type(even) {
   background-color: #f5505d;
 }
 
-@media (prefers-color-scheme: dark) {
+.orientation-disclaimer {
+  background-color: #999;
+}
+.orientation-disclaimer p {
+  background-color: #c5c5c7;
+  box-shadow: 10px 5px 5px #2e3035;
+}
+
+@media (prefers-color-scheme: light) {
   body > div:nth-of-type(odd) {
     background-color: #999;
   }
@@ -462,13 +470,20 @@ body > div:nth-of-type(even) {
 .orientation-disclaimer {
   display: none;
 }
+.orientation-disclaimer p {
+  border: 0.1333333333vh solid black;
+  background-color: #c5c5c7;
+  box-shadow: 10px 5px 5px #2e3035;
+  border-radius: 10px;
+  max-width: 90%;
+}
 
 @media (orientation: portrait) {
   .scene__container > div:not(:last-child) {
     display: none;
   }
   .orientation-disclaimer {
-    display: revert;
+    display: flex;
   }
 }
 .scene__container--2 {
@@ -540,6 +555,15 @@ body > div:nth-of-type(even) {
 
 .scene__container--3 .shoebox > ellipse {
   transform: translate(-24%, 3%);
+}
+
+.orientation-disclaimer {
+  padding: 5%;
+  align-items: center;
+}
+.orientation-disclaimer p {
+  padding: 5% 3%;
+  box-sizing: border-box;
 }
 
 .scene__container--2 .store__sign > a {
