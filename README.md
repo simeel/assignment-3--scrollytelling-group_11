@@ -3,7 +3,25 @@
 
 
 * Missing things
-    * Text
     * BEM
     * README
     * prefers-reduced-motion
+
+
+# The story of Billy Pore
+Contributors: Ola Nikolai Skjeret, Simen Elvhaug
+
+## What the project does
+
+
+## Why the project is useful
+This project aims to raise awarness towards poverty, even in countries where it may seem less as a problem.
+
+## How users can get started with the project
+
+
+## Where users can get help with your project
+Go to the "issues" tab on the game's repository. Open a new issue if it doesn't already exist.
+
+## Which technology is used
+We have structured our CSS using SASS/SCSS with nesting and also using BEM naming to organize our HTML and CSS. We have used a JavaScript script to implement the intersection observer. The intersection observer makes us able to start animations at a certain point when scrolling through the webpage. It is used on all 5 "slides" of the story. 
