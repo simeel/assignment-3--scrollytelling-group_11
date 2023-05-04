@@ -289,16 +289,28 @@ $borderWidth: 0.4vh;
 
     .s4-alarm-lights {
         top: 10vh;
-        width: 100%;
-        height: 10vw;
         position: relative;
         display: flex;
         justify-content: space-around;
 
         .s4-alarm {
-            width: 10%;
-            height: 100%;
             border-radius: 100%;
+        }
+    }
+
+    .s4-store__interior {
+        position: absolute;
+        z-index: 0;
+
+        .store__door {
+            position: relative;
+            bottom: -10%;
+            left: 40%;
+        }
+
+        .store__floor {
+            position: relative;
+            bottom: -10%;
         }
     }
 }

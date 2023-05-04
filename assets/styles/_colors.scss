@@ -197,6 +197,16 @@ body>div:nth-of-type(even) {
     .s4-alarm {
         background-color: $darkGray;
     }
+
+    .s4-store__interior {
+        .store__door {
+            background-color: $brown;
+        }
+
+        .store__floor {
+            background-color: $lightGray;
+        }
+    }
 }
 
 .scene__container--5 {
