@@ -93,10 +93,10 @@
         transform: translate(0, 0);
     }
 }
-.visible #person--1, .visible #person-2 {
+.visible #person--1, .visible #person--2 {
     animation: scene-2-walk 45s linear infinite;
 }
-#person--2 {
+.visible #person--2 {
     animation-delay: 1.5s;
 }
 
