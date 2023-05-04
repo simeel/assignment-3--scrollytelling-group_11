@@ -67,7 +67,7 @@
             "bl . br";
         justify-items: center;
         align-items: center;
-        a {
+        p {
             grid-area: sign;
             z-index: 10;
         }
@@ -128,6 +128,16 @@
             height: 40%;
         }
     }
+}
+
+.text-box {
+    position: relative;
+    top: -495%;
+    z-index: 1;
+
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3%;
 }
 
 .orientation-disclaimer {

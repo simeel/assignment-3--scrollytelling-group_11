@@ -138,6 +138,10 @@ $borderWidth: 0.4vh;
     }
 }
 
+a:hover {
+    cursor: default;
+}
+
 .scene__container--2 {
     .store__wall--top {
         width: 100%;
@@ -178,10 +182,6 @@ $borderWidth: 0.4vh;
         border: $borderWidth solid black;
         border-radius: 10px;
         box-shadow: 5px 5px 5px #2e3035;
-
-        a:hover {
-            cursor: default;
-        }
 
         div {
             height: 1.5vh;
@@ -312,6 +312,19 @@ $borderWidth: 0.4vh;
             position: relative;
             bottom: -10%;
         }
+    }
+}
+
+.text-box {
+    opacity: 0;
+    max-height: 86%;
+    p {
+        border: calc($borderWidth / 3) solid black;
+        border-radius: 10px;
+        max-width: 30%;
+        overflow-y: auto;
+        padding: 2%;
+        box-sizing: border-box;
     }
 }
 
