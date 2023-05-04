@@ -165,31 +165,31 @@ $boxShadow: #2e3035;
 .scene__container--4 {
     background-color: $yellow;
 
-    .s4-guard__hand {
+    .guard__hand {
         fill: $lightGray;
         stroke: $black;
     }
 
-    .s4-billy__head,
-    .s4-billy__body {
+    .billy__head,
+    .billy__body {
         fill: $white;
     }
 
-    .s4-billy__body,
-    .s4-billy__head,
-    .s4-billy__hair {
+    .billy__body,
+    .billy__head,
+    .billy__hair {
         stroke: $black;
     }
 
-    .s4-billy__hair {
+    .billy__hair {
         fill: none;
     }
 
-    .s4-alarm {
+    .alarm {
         background-color: $darkGray;
     }
 
-    .s4-store__interior {
+    .store__interior {
         .store__door {
             background-color: $brown;
         }
@@ -318,11 +318,11 @@ $boxShadow: #2e3035;
     .scene__container--4 {
         background-color: $white;
 
-        .s4-billy__hair {
+        .billy__hair {
             fill: none;
         }
 
-        .s4-alarm {
+        .alarm {
             background-color: $white;
         }
     }

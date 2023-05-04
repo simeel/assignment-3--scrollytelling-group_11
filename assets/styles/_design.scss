@@ -254,51 +254,51 @@ a:hover {
 }
 
 .scene__container--4 {
-    .s4-billy {
+    .billy {
         position: relative;
         bottom: -10%;
         left: 30%;
         width: 43%;
     }
 
-    .s4-billy__hair {
+    .billy__hair {
         stroke-width: 6.8px;
     }
 
-    .s4-billy__body,
-    .s4-billy__head,
-    .s4-billy__hair {
+    .billy__body,
+    .billy__head,
+    .billy__hair {
         stroke-miterlimit: 10;
     }
 
-    .s4-billy__body {
+    .billy__body {
         stroke-width: 0.73px;
     }
 
-    .s4-guard {
+    .guard {
         position: relative;
         width: 40%;
         left: -30%;
         bottom: -100%;
     }
 
-    .s4-guard__hand {
+    .guard__hand {
         stroke-miterlimit: 10;
         stroke-width: 0.89px;
     }
 
-    .s4-alarm-lights {
+    .alarm__lights {
         top: 10vh;
         position: relative;
         display: flex;
         justify-content: space-around;
 
-        .s4-alarm {
+        .alarm {
             border-radius: 100%;
         }
     }
 
-    .s4-store__interior {
+    .store__interior {
         position: absolute;
         z-index: 0;
 

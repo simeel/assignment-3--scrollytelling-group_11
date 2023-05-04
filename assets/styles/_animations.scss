@@ -93,10 +93,10 @@
         transform: translate(0, 0);
     }
 }
-.visible #person-1, .visible #person-2 {
+.visible #person--1, .visible #person-2 {
     animation: scene-2-walk 45s linear infinite;
 }
-#person-2 {
+#person--2 {
     animation-delay: 1.5s;
 }
 
@@ -235,13 +235,13 @@
     }
 }
 .visible.scene__container--4 {
-    .s4-billy {
+    .billy {
         animation: scene-4-walk 4.5s linear forwards;
     }
-    .s4-alarm {
+    .alarm {
         animation: alarm-lights .5s linear 4s infinite;
     }
-    .s4-guard {
+    .guard {
         animation: guard-hand .5s ease-out 4s forwards;
     }
 }
@@ -293,7 +293,7 @@
 }
 
 @media (prefers-reduced-motion) {
-    .s4-alarm {
+    .alarm {
         animation-duration: 1s;
     }
 }
