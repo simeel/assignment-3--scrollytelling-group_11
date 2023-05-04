@@ -3,8 +3,7 @@
 
 
 * Missing things
-    * "Intermission" text ?
-    * Shoe store name
-    * Finish scene 3
-    * animation scene 3
+    * Text
+    * README
+    * prefers-reduced-motion
     * pleases use landscape mode :&#41;
