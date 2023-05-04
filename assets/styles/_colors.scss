@@ -1,6 +1,3 @@
-// Old, remove when all scenes have content
-$backgroundEven: #306daa;
-
 $lightBeige: #f6967e;
 $darkBeige: #dd8771;
 $lightRed: #f5505d;
@@ -14,14 +11,6 @@ $lightBlue: #72b1ef;
 $darkBlue: #5858ff;
 $brown: #ae5e2f;
 $boxShadow: #2e3035;
-
-body>div:nth-of-type(odd) {
-    background-color: $lightBlue;
-}
-
-body>div:nth-of-type(even) {
-    background-color: $backgroundEven;
-}
 
 .window__container {
     background-color: $black;
@@ -85,6 +74,10 @@ body>div:nth-of-type(even) {
     #table {
         fill: $brown;
     }
+
+    a {
+        color: $black;
+    }
 }
 
 .scene__container--2 {
@@ -106,10 +99,6 @@ body>div:nth-of-type(even) {
 
     .store__sign {
         background-color: $darkRed;
-
-        a {
-            color: $black;
-        }
 
         div {
             background-color: $black;
@@ -174,6 +163,7 @@ body>div:nth-of-type(even) {
 }
 
 .scene__container--4 {
+    background-color: $lightBlue;
     .s4-guard__hand {
         fill: $darkGray;
         stroke: $black;
@@ -219,6 +209,11 @@ body>div:nth-of-type(even) {
     .person__shoes>* {
         background-color: $lightRed;
     }
+}
+
+.text-box > p {
+    background-color: $lightGray;
+    box-shadow: 10px 5px 5px $boxShadow;
 }
 
 .orientation-disclaimer {

@@ -1,4 +1,4 @@
-@keyframes eye-animation {
+@keyframes scene-1-eyes {
     0% {
         transform: rotate(0) translate(0, 0);
     }
@@ -37,7 +37,7 @@
 }
 .visible.scene__container--1 #billy__eyes {
     transform-origin: center;
-    animation: eye-animation 10s ease-in-out infinite;
+    animation: scene-1-eyes 10s ease-in-out infinite;
 }
 
 @keyframes scene-2-walk {
@@ -100,6 +100,20 @@
     animation-delay: 1.5s;
 }
 
+@keyframes scene-3-eyes {
+    from {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(2%);
+    }
+    66% {
+        transform: translateX(-2%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
 @keyframes box-anim {
     from {
         transform: rotate(0) translate(0);
@@ -143,14 +157,17 @@
     }
 }
 .visible.scene__container--3 {
+    .billy__eyes {
+        animation: scene-3-eyes 3s ease-in-out;
+    }    
     .shoebox > path:nth-of-type(2) {
-        animation: box-anim 8s linear forwards;
+        animation: box-anim 8s linear 3s forwards;
     }
     .shoebox > ellipse {
-        animation: shoe-anim 2s linear 2s forwards;
+        animation: shoe-anim 2s linear 5s forwards;
     }
     .billy__legs > ellipse {
-        animation: billy-shoes 2s linear 4.2s forwards;
+        animation: billy-shoes 2s linear 7.2s forwards;
     }
 }
 
@@ -241,27 +258,6 @@
     animation: blur-animation 5s linear forwards;
 }
 
-
-.text-box {
-    opacity: 0;
-    position: relative;
-    top: -495%;
-    z-index: 1;
-
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 3%;
-    p {
-        border: calc($borderWidth / 3) solid black;
-        background-color: #c5c5c7;
-        box-shadow: 10px 5px 5px #2e3035;
-        border-radius: 10px;
-        max-width: 30%;
-        padding: 5% 3%;
-        box-sizing: border-box;
-    }
-} // Move to relevant partials
-
 @keyframes text-box-anim {
     from {
         opacity: 0;
@@ -287,11 +283,17 @@
     animation-delay: 5s;
 }
 .visible.scene__container--3 .text-box {
-    animation-delay: 10s;
+    animation-delay: 13s;
 }
 .visible.scene__container--4 .text-box {
     animation-delay: 7s;
 }
 .visible.scene__container--5 .text-box {
     animation-delay: 8s;
+}
+
+@media (prefers-reduced-motion) {
+    .s4-alarm {
+        animation-duration: 1s;
+    }
 }
