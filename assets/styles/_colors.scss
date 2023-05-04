@@ -211,7 +211,7 @@ body>div:nth-of-type(even) {
         }
 
         .person__shoes>* {
-            background-color: $darkRed;
+            background-color: $lightBlue;
         }
 
         #table {
@@ -280,7 +280,19 @@ body>div:nth-of-type(even) {
         }
     
         .s4-alarm {
-            background-color: $gray;
+            background-color: $white;
+        }
+    }
+
+    .scene__container--5 {
+
+        #billy-shoe,
+        #billy-shoe-2 {
+            fill: $white;
+        }
+    
+        .person__shoes>* {
+            background-color: $lightRed;
         }
     }
 }
