@@ -32,6 +32,8 @@ body>div:nth-of-type(even) {
 }
 
 .cover-side {
+    background-color: $lightRed;
+    
     .cover-3 {
         fill: none;
     }
