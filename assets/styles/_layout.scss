@@ -1,3 +1,30 @@
+.cover-side {
+    overflow: hidden;
+    svg {
+        .billy {
+            position: absolute;
+            transform: scale(90%) translate(-50%, 5%); 
+        }
+    }
+
+    .cover-side__text-box {
+        position: absolute;
+        top: 30%;
+        right: 10%;
+        width: 40%;
+        text-align: center;
+        
+        p {
+            display: inline-block;
+            margin: 0;
+        }
+    
+        :nth-of-type(2) {
+            margin-top: 2%;
+        }
+    }
+}
+
 .scene__container--2 {
     overflow: hidden;
     .store__wall--right, .store__wall--left, .store__entrance, svg {
@@ -72,7 +99,7 @@
     .shoebox > ellipse {
         transform: translate(-24%, 3%);
     }
-    
+
 }
 
 .orientation-disclaimer {
