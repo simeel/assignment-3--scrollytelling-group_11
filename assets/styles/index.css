@@ -13,6 +13,23 @@ body > div:nth-of-type(even) {
   background-color: #5858ff;
 }
 
+.cover-side .cover-3 {
+  fill: none;
+}
+.cover-side .cover-1,
+.cover-side .cover-2,
+.cover-side .cover-4,
+.cover-side .cover-5 {
+  fill: #fff;
+}
+.cover-side .cover-1,
+.cover-side .cover-2,
+.cover-side .cover-3,
+.cover-side .cover-4,
+.cover-side .cover-5 {
+  stroke: #000;
+}
+
 .scene__container--1 svg,
 .scene__container--5 svg {
   background-image: linear-gradient(#72b1ef 40%, #f6967e 40%);
@@ -246,6 +263,29 @@ body > div:nth-of-type(even) {
 .scene__container > div svg {
   height: 100%;
   width: 100%;
+}
+
+.cover-side .cover-1 {
+  stroke-width: 1.12px;
+}
+.cover-side .cover-1,
+.cover-side .cover-2,
+.cover-side .cover-3,
+.cover-side .cover-4,
+.cover-side .cover-5 {
+  stroke-miterlimit: 10;
+}
+.cover-side .cover-2 {
+  stroke-width: 1.21px;
+}
+.cover-side .cover-3 {
+  stroke-width: 4.2px;
+}
+.cover-side .cover-4 {
+  stroke-width: 0.87px;
+}
+.cover-side .cover-5 {
+  stroke-width: 1.08px;
 }
 
 /*.scene__container--1 {

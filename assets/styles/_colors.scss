@@ -29,6 +29,27 @@ body>div:nth-of-type(even) {
     }
 }
 
+.cover-side {
+    .cover-3 {
+        fill: none;
+    }
+
+    .cover-1,
+    .cover-2,
+    .cover-4,
+    .cover-5 {
+        fill: #fff;
+    }
+
+    .cover-1,
+    .cover-2,
+    .cover-3,
+    .cover-4,
+    .cover-5 {
+        stroke: #000;
+    }
+}
+
 .scene__container--1,
 .scene__container--5 {
     svg {
@@ -141,10 +162,11 @@ body>div:nth-of-type(even) {
         fill: none;
         stroke: $black;
     }
-    .shoebox > ellipse {
+
+    .shoebox>ellipse {
         fill: $lightBlue;
     }
-    
+
 }
 
 .scene__container--4 {
@@ -190,7 +212,7 @@ body>div:nth-of-type(even) {
     body>div:nth-of-type(odd) {
         background-color: $gray;
     }
-    
+
     body>div:nth-of-type(even) {
         background-color: $gray;
     }
@@ -255,30 +277,30 @@ body>div:nth-of-type(even) {
         svg {
             background-image: linear-gradient($white 50%, $gray 50%);
         }
-    
+
         .cls-1,
         .cls-2,
         .scene-4__shoe {
             stroke: $black;
             fill: $white;
         }
-    
+
         .scene-4__box {
             stroke: $white;
             fill: $black;
         }
-    
+
         .bench {
             fill: $black;
             stroke: $white;
         }
     }
 
-    .scene__container--4 {        
+    .scene__container--4 {
         .s4-billy__hair {
             fill: none;
         }
-    
+
         .s4-alarm {
             background-color: $white;
         }
@@ -290,7 +312,7 @@ body>div:nth-of-type(even) {
         #billy-shoe-2 {
             fill: $white;
         }
-    
+
         .person__shoes>* {
             background-color: $lightRed;
         }
