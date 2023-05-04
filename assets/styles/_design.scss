@@ -293,6 +293,13 @@ $borderWidth: 0.4vh;
 
 .orientation-disclaimer {
     display: none;
+    p {
+        border: $borderWidth / 3 solid black;
+        background-color: #c5c5c7;
+        box-shadow: 10px 5px 5px #2e3035;
+        border-radius: 10px;
+        max-width: 90%;
+    }
 }
 
 @media (orientation: portrait) {
@@ -300,6 +307,6 @@ $borderWidth: 0.4vh;
         display: none;
     }
     .orientation-disclaimer {
-        display: revert;
+        display: flex;
     }
 }

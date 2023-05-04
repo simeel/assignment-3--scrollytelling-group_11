@@ -8,10 +8,12 @@ $darkRed: #ee1b2e;
 $yellow: #d8cc44;
 $black: #000;
 $white: #fff;
-$gray: #999;
+$darkGray: #999;
+$lightGray: #c5c5c7;
 $lightBlue: #72b1ef;
 $darkBlue: #5858ff;
 $brown: #ae5e2f;
+$boxShadow: #2e3035;
 
 body>div:nth-of-type(odd) {
     background-color: $lightBlue;
@@ -50,7 +52,7 @@ body>div:nth-of-type(even) {
     }
 
     .person__legs>* {
-        background-color: $gray;
+        background-color: $darkGray;
     }
 
     .person__shoes>* {
@@ -106,13 +108,13 @@ body>div:nth-of-type(even) {
     }
 
     .st0 {
-        fill: $gray;
+        fill: $darkGray;
     }
 }
 
 .scene__container--3 {
     svg {
-        background-image: linear-gradient($yellow 50%, $gray 50%);
+        background-image: linear-gradient($yellow 50%, $darkGray 50%);
     }
 
     .cls-1,
@@ -149,7 +151,7 @@ body>div:nth-of-type(even) {
 
 .scene__container--4 {
     .s4-guard__hand {
-        fill: $gray;
+        fill: $darkGray;
         stroke: $black;
     }
 
@@ -169,7 +171,7 @@ body>div:nth-of-type(even) {
     }
 
     .s4-alarm {
-        background-color: $gray;
+        background-color: $darkGray;
     }
 }
 
@@ -185,20 +187,28 @@ body>div:nth-of-type(even) {
     }
 }
 
-@media (prefers-color-scheme: dark) {
+.orientation-disclaimer {
+    background-color: $darkGray;
+    p {
+        background-color: $lightGray;
+        box-shadow: 10px 5px 5px $boxShadow;
+    }
+}
+
+@media (prefers-color-scheme: light) {
 
     body>div:nth-of-type(odd) {
-        background-color: $gray;
+        background-color: $darkGray;
     }
     
     body>div:nth-of-type(even) {
-        background-color: $gray;
+        background-color: $darkGray;
     }
 
     .scene__container--1,
     .scene__container--5 {
         svg {
-            background-image: linear-gradient($white 40%, $gray 40%);
+            background-image: linear-gradient($white 40%, $darkGray 40%);
         }
 
         #billy-shoe,
@@ -207,7 +217,7 @@ body>div:nth-of-type(even) {
         }
 
         .person__legs>* {
-            background-color: $gray;
+            background-color: $darkGray;
         }
 
         .person__shoes>* {
@@ -224,7 +234,7 @@ body>div:nth-of-type(even) {
         .store__wall--top,
         .store__wall--left,
         .store__wall--right {
-            background-color: $gray;
+            background-color: $darkGray;
             background-image: none;
             background-size: 58px 58px;
             background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
@@ -253,7 +263,7 @@ body>div:nth-of-type(even) {
 
     .scene__container--3 {
         svg {
-            background-image: linear-gradient($white 50%, $gray 50%);
+            background-image: linear-gradient($white 50%, $darkGray 50%);
         }
     
         .cls-1,
