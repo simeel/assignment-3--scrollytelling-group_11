@@ -31,7 +31,7 @@ $boxShadow: #2e3035;
     .cover-2,
     .cover-4,
     .cover-5 {
-        fill: #fff;
+        fill: $white;
     }
 
     .cover-1,
@@ -39,7 +39,7 @@ $boxShadow: #2e3035;
     .cover-3,
     .cover-4,
     .cover-5 {
-        stroke: #000;
+        stroke: $black;
     }
 }
 
@@ -73,10 +73,6 @@ $boxShadow: #2e3035;
 
     #table {
         fill: $brown;
-    }
-
-    a {
-        color: $black;
     }
 }
 
@@ -273,10 +269,6 @@ $boxShadow: #2e3035;
 
         .store__sign {
             background-color: $white;
-
-            a {
-                color: $black;
-            }
 
             div {
                 background-color: $black;
