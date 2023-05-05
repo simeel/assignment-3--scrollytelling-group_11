@@ -210,6 +210,10 @@ $boxShadow: #2e3035;
 
 .scene__container--6 {
     background-color: $lightRed;
+
+    a {
+        color: $black;
+    }
 }
 
 .text-box>p {
