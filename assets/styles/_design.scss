@@ -315,6 +315,16 @@ a:hover {
     }
 }
 
+.scene__container--6 {
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+}
+
 .text-box {
     opacity: 0;
     max-height: 86%;
