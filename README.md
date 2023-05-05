@@ -12,7 +12,7 @@ The project presents a scrollytelling story about poverty.
 This project aims to raise awarness towards poverty, even in countries where it might seem like less of a problem.
 
 ## How users can get started with the project
-Users can get started by following the [link to GitHub Pages](https://ninejar.github.io/assignment-3--scrollytelling-group_11/), or by downloading, forking or cloning the repository.
+Users can get started by following the [link to GitHub Pages](https://simeel.github.io/assignment-3--scrollytelling-group_11/), or by downloading, forking or cloning the repository.
 
 ## Where users can get help with your project
 Go to the repository's "issues" tab and open a new issue if it does not already exist.
