@@ -316,12 +316,17 @@ a:hover {
 }
 
 .scene__container--6 {
-    div {
-        display: flex;
+    .conclusion {
+        display: grid;
+        grid-template-rows: 1fr 3fr;
         align-items: center;
-        justify-content: center;
+        justify-items: center;
         height: 100%;
         width: 100%;
+    }
+
+    .unicef-logo {
+        max-width: 55vw;
     }
 }
 

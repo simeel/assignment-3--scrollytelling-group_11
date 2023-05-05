@@ -17,6 +17,12 @@
     }      
 }
 
+.scene__container--6 {
+    p {
+        font-size: 2vw;
+    }
+}
+
 @media (prefers-reduced-motion) {
     .cover-side__text-box *, .text-box * { 
         font-family: Arial, sans-serif;
