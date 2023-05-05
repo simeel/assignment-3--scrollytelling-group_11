@@ -7,9 +7,8 @@
         font-size: 7.5vw;
     }
 }
-
-a {
-    text-decoration: none;
+.text-box > p {
+    font-size: 2vw;
 }
 
 .scene__container--2 {
@@ -19,11 +18,7 @@ a {
 }
 
 @media (prefers-reduced-motion) {
-    .cover-side__text-box * { 
-        font-family: Arial, sans-serif;
-    }
-
-    a {
+    .cover-side__text-box *, .text-box * { 
         font-family: Arial, sans-serif;
     }
 

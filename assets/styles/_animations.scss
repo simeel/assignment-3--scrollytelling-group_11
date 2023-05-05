@@ -31,13 +31,17 @@
         transform: rotate(0) translate(0, 0);
     }
 
-    100% {
+    95% {
         transform: rotate(0) translate(0, 0);
+    }
+
+    100% {
+        transform: rotate(-10deg) translate(4%, 2%);
     }
 }
 .visible.scene__container--1 #billy__eyes {
     transform-origin: center;
-    animation: scene-1-eyes 10s ease-in-out infinite;
+    animation: scene-1-eyes 10s ease-in-out forwards;
 }
 
 @keyframes scene-2-walk {
